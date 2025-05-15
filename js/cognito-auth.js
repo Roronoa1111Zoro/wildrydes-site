@@ -139,6 +139,7 @@ var WildRydes = window.WildRydes || {};
             console.log('user name is ' + cognitoUser.getUsername());
             var confirmation = ('Registration successful. Please check your email inbox or spam folder for your verification code.');
             if (confirmation) {
+                console.log('Redirecting to verify.html');
                 window.location.href = 'verify.html';
             }
         };
